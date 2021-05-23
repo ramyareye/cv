@@ -20,7 +20,7 @@ const HeaderBioBotttom: FC<HeaderSocialProps> = ({ type, text }) => {
     };
 
     return (
-        <div className="flex mr-6 cursor-pointer" onClick={onClick}>
+        <div className="flex mr-6 cursor-pointer mt-6" onClick={onClick}>
             {type === 'phone' ? (
                 <Icon icon={faPhone} />
             ) : type === 'email' ? (

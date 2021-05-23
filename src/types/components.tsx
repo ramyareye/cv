@@ -22,6 +22,7 @@ export enum BlockTypesProps {
     SKILLS = 'skills',
     HOBBIES = 'hobbies',
     VOLUNTEERING = 'volunteering',
+    OPEN_SOURCE = 'open-source',
 }
 
 export type HeadLineTitleProps = { [index in BlockTypesProps]: string };
@@ -58,7 +59,7 @@ export interface ExperienceBlockProps extends BlockProps {
 
 export interface SkillBlockValueProps extends BlockValueProps {
     title: string;
-    level: string;
+    level?: string;
 }
 
 export interface SkillBlockProps extends BlockProps {
@@ -66,4 +67,43 @@ export interface SkillBlockProps extends BlockProps {
     value: SkillBlockValueProps[];
 }
 
-export type AllBlockProps = ExperienceBlockProps | SkillBlockProps;
+export interface HobbiesBlockValueProps extends BlockValueProps {
+    title: string;
+    icon?: string;
+}
+
+export interface HobbiesBlockProps extends BlockProps {
+    type: BlockTypesProps.HOBBIES;
+    value: HobbiesBlockValueProps[];
+}
+
+export interface VolunteeringBlockValueProps extends BlockValueProps {
+    from: string;
+    to?: string;
+    location: string;
+    title: string;
+    url: string;
+    link?: string;
+}
+
+export interface VolunteeringBlockProps extends BlockProps {
+    type: BlockTypesProps.VOLUNTEERING;
+    value: VolunteeringBlockValueProps[];
+}
+
+export interface OpenSourceBlockValueProps extends BlockValueProps {
+    title: string;
+    link?: string;
+}
+
+export interface OpenSourceBlockProps extends BlockProps {
+    type: BlockTypesProps.OPEN_SOURCE;
+    value: OpenSourceBlockValueProps[];
+}
+
+export type AllBlockProps =
+    | ExperienceBlockProps
+    | SkillBlockProps
+    | HobbiesBlockProps
+    | VolunteeringBlockProps
+    | OpenSourceBlockProps;

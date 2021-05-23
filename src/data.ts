@@ -5,6 +5,9 @@ import {
     ExperienceBlockProps,
     SkillBlockProps,
     BlockTypesProps,
+    HobbiesBlockProps,
+    VolunteeringBlockProps,
+    OpenSourceBlockProps,
 } from 'types/components';
 
 const headerData: HeaderProps = {
@@ -94,11 +97,156 @@ const skillsData: SkillBlockProps = {
     // options: {},
     value: [
         {
-            id: 1,
-            title: 'Senior front-end developer',
-            level: '123',
+            id: 'js',
+            title: 'Javascript/Typeccript',
+            level: 'Mid-Senior',
+        },
+        {
+            id: 'react',
+            title: 'React/Next.js',
+            level: 'Mid-Senior',
+        },
+        {
+            id: 'react-native',
+            title: 'React Native',
+            level: 'Mid-Senior',
+        },
+        {
+            id: 'nodejs',
+            title: 'Nodejs',
+            level: 'Mid-Senior',
+        },
+        {
+            id: 'graph-rest',
+            title: 'GraphQL/Rest',
+            // level: 'Mid-Senior',
+        },
+        {
+            id: 'css',
+            title: 'CSS/Tailwind',
+            // level: 'Mid-Senior',
+        },
+        {
+            id: 'wordpress',
+            title: 'Wordpress',
+            // level: 'Mid-Senior',
+        },
+        {
+            id: 'team',
+            title: 'Team Management',
+            // level: 'Mid-Senior',
         },
     ],
 };
 
-export default { headerData, experienceData, skillsData };
+const hobbiesData: HobbiesBlockProps = {
+    type: BlockTypesProps.HOBBIES,
+    // options: {},
+    value: [
+        {
+            id: 'research',
+            title: 'Research',
+            // icon: 'Mid-Senior',
+        },
+        {
+            id: 'traveling',
+            title: 'Traveling',
+            // icon: 'Mid-Senior',
+        },
+        {
+            id: 'photography',
+            title: 'Photography',
+            // icon: 'Mid-Senior',
+        },
+        {
+            id: 'music',
+            title: 'Music',
+            // icon: 'Mid-Senior',
+        },
+        {
+            id: 'biking',
+            title: 'Biking',
+            // icon: 'Mid-Senior',
+        },
+        {
+            id: 'aid-working',
+            title: 'Aid Working',
+            // icon: 'Mid-Senior',
+        },
+    ],
+};
+
+const volunteeringData: VolunteeringBlockProps = {
+    type: BlockTypesProps.VOLUNTEERING,
+    // options: {},
+    value: [
+        {
+            id: 'komak',
+            from: '04/2016',
+            // to?: string;
+            location: 'Tehran, Iran',
+            title: 'Website Manager',
+            url: 'KomakCharity.com',
+            link: 'http://komakcharity.com/',
+        },
+        {
+            id: 'iraneman',
+            from: '05/2017',
+            // to?: string;
+            location: 'Tehran, Iran',
+            title: 'Website Manager',
+            url: 'IraneMan.org',
+            link: 'http://iraneman.org/',
+        },
+        {
+            id: 'houseno4',
+            from: '06/2019',
+            // to?: string;
+            location: 'Tehran, Iran',
+            title: 'Website Manager',
+            url: 'HouseNo4.com',
+            link: 'http://houseno4.org/',
+        },
+    ],
+};
+
+const openSourceData: OpenSourceBlockProps = {
+    type: BlockTypesProps.OPEN_SOURCE,
+    // options: {},
+    value: [
+        {
+            id: 'elegant-react-native',
+            title: 'Maintaining "React Native Elegant" with Iran React Community',
+            link: 'https://github.com/iran-react-community/elegant-react-native',
+        },
+        {
+            id: 'iran-react-community-lecture',
+            title: 'Lecturer on Iran React Community meet-up',
+            // link: 'Mid-Senior',
+        },
+        {
+            id: 'extension',
+            title: 'Doing an extension starter on top of React',
+            // link: 'Mid-Senior',
+        },
+        {
+            id: 'swr',
+            title: 'SWR',
+            link: 'https://github.com/vercel/swr/blob/master/examples/infinite-scroll',
+        },
+        {
+            id: 'nextjs-wp',
+            title: 'Nextjs Commerce for WP',
+            // link: 'Mid-Senior',
+        },
+    ],
+};
+
+export default {
+    headerData,
+    experienceData,
+    skillsData,
+    hobbiesData,
+    volunteeringData,
+    openSourceData,
+};

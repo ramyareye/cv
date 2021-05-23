@@ -1,7 +1,13 @@
 import { FC } from 'react';
 import cn from 'classnames';
-import { faChrome } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
+import {
+    faTasks,
+    faUser,
+    faLaptopCode,
+    faUserNinja,
+    faInfinity,
+    faCheck,
+} from '@fortawesome/free-solid-svg-icons';
 
 import Icon from './Icon';
 
@@ -15,6 +21,7 @@ const HeadLine: FC<HeadLineProps> = ({ type, padded, className }) => {
         'skills': 'Skills',
         'hobbies': 'Hobbies',
         'volunteering': 'Volunteering',
+        'open-source': 'Open Source',
     };
 
     return (
@@ -26,15 +33,15 @@ const HeadLine: FC<HeadLineProps> = ({ type, padded, className }) => {
             {type === 'profile' ? (
                 <Icon icon={faUser} />
             ) : type === 'experience' ? (
-                <Icon icon={faEnvelope} />
-            ) : type === 'education' ? (
-                <Icon icon={faChrome} />
+                <Icon icon={faLaptopCode} />
             ) : type === 'skills' ? (
-                <Icon icon={faChrome} />
+                <Icon icon={faTasks} />
             ) : type === 'hobbies' ? (
-                <Icon icon={faChrome} />
+                <Icon icon={faCheck} />
             ) : type === 'volunteering' ? (
-                <Icon icon={faChrome} />
+                <Icon icon={faInfinity} />
+            ) : type === 'open-source' ? (
+                <Icon icon={faUserNinja} />
             ) : null}
             <div className="min-w-[fit-content] font-bold">{titles[type]}</div>
             <div className="ml-4 border-solid border-b-2 border-main w-full h-0" />

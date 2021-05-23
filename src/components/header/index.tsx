@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ avatar, title, socials, bio, description }) =
                     </div>
                 )}
             </div>
-            <div className="w-3/4 flex flex-col sm:pl-4 sm:border-l border-gray-200 sm:border-t-0 border-t ">
+            <div className="w-3/4 flex flex-col sm:pl-4 sm:border-l border-gray-200 sm:border-t-0 border-t print:border-l-0">
                 {bio && (
                     <>
                         <HeadLine type={BlockTypesProps.PROFILE} />
@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ avatar, title, socials, bio, description }) =
                         </div>
                     </>
                 )}
-                <div className="flex">
+                <div className="flex flex-wrap">
                     {socials_?.length &&
                         socials_.map((social) => (
                             <HeaderBioBotttom

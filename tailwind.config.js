@@ -11,6 +11,9 @@ module.exports = {
             colors: {
                 main: colors.green[500],
             },
+            screens: {
+                'print': { 'raw': 'print' },
+            },
         },
         theme: {
             container: {
