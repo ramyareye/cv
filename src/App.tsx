@@ -19,6 +19,7 @@ const App: FC = () => {
                 <Block type={data.hobbiesData.type} value={data.hobbiesData.value} />
                 <Block type={data.volunteeringData.type} value={data.volunteeringData.value} />
                 <Block type={data.openSourceData.type} value={data.openSourceData.value} />
+                <Block type={data.EducationData.type} value={data.EducationData.value} />
 
                 <Footer />
             </div>

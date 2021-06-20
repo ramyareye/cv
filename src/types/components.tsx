@@ -101,9 +101,23 @@ export interface OpenSourceBlockProps extends BlockProps {
     value: OpenSourceBlockValueProps[];
 }
 
+export interface EducationBlockValueProps extends BlockValueProps {
+    title: string;
+    university: string;
+    field: string;
+    from: string;
+    to: string;
+}
+
+export interface EducationBlockProps extends BlockProps {
+    type: BlockTypesProps.EDUCATION;
+    value: EducationBlockValueProps[];
+}
+
 export type AllBlockProps =
     | ExperienceBlockProps
     | SkillBlockProps
     | HobbiesBlockProps
     | VolunteeringBlockProps
-    | OpenSourceBlockProps;
+    | OpenSourceBlockProps
+    | EducationBlockProps;

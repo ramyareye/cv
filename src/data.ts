@@ -8,6 +8,7 @@ import {
     HobbiesBlockProps,
     VolunteeringBlockProps,
     OpenSourceBlockProps,
+    EducationBlockProps,
 } from 'types/components';
 
 const headerData: HeaderProps = {
@@ -242,6 +243,21 @@ const openSourceData: OpenSourceBlockProps = {
     ],
 };
 
+const EducationData: EducationBlockProps = {
+    type: BlockTypesProps.EDUCATION,
+    // options: {},
+    value: [
+        {
+            id: 'Mohajer',
+            title: 'Associate degree',
+            university: 'Mohajer Technical University of Isfahan',
+            field: '■ Software Engineering',
+            from: '2010',
+            to: '2012',
+        },
+    ],
+};
+
 export default {
     headerData,
     experienceData,
@@ -249,4 +265,5 @@ export default {
     hobbiesData,
     volunteeringData,
     openSourceData,
+    EducationData,
 };
