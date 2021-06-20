@@ -55,7 +55,8 @@ const experienceData: ExperienceBlockProps = {
             text:
                 'Peste is a development agency that helps out businesses with their outsourced web applications. As the Full-stack developer, my core activities included:',
             projects: [
-                'Building stable and maintainable codebases using React and Next.',
+                'Building stable and maintainable codebases using React, Next and Nest.',
+                'Contributing with backend team, designing database and structuring infrastructure',
                 'Developing front-end for 5+ websites and web apps, using React.js, Next.js, Redux, and Apollo.',
                 'Using skills in debugging to check code, improve code and enhance the functionality and user experience of web applications',
                 'Creating custom React.js components and hooks.',
