@@ -17,7 +17,7 @@ const headerData: HeaderProps = {
     avatar,
     title: 'Reza Babaei',
     socials: {
-        phone: '+989373792237',
+        phone: '+905340435969',
         email: 'ramyariran@gmail.com',
         website: 'https://github.com/ramyareye',
     },
