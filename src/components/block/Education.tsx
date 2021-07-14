@@ -1,6 +1,4 @@
 import { FC } from 'react';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { EducationBlockValueProps } from 'types/components';
 
