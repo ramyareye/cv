@@ -13,6 +13,7 @@ const App: FC = () => {
         <div className="w-full min-h-screen bg-gray-200 py-20 print:bg-white print:p-4">
             <div className="max-w-screen-lg mx-auto bg-white shadow-sm p-8 print:max-w-full print:p-0 print:shadow-none">
                 <Header {...data.headerData} />
+                <div>some actions test :D</div>
 
                 <Block type={data.experienceData.type} value={data.experienceData.value} />
                 <Block type={data.skillsData.type} value={data.skillsData.value} />
