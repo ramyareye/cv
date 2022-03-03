@@ -17,7 +17,7 @@ const headerData: HeaderProps = {
     avatar,
     title: 'Reza Babaei',
     socials: {
-        phone: '+905340435969',
+        phone: '+66835299139',
         email: 'ramyariran@gmail.com',
         website: 'https://github.com/ramyareye',
     },
@@ -31,8 +31,22 @@ const experienceData: ExperienceBlockProps = {
     // options: {},
     value: [
         {
-            id: 1,
+            id: 6,
+            from: '07/2021',
+            location: 'Bangkok - Thailand',
+            title: 'Web/Mobile Engineer',
+            company: 'Amity',
+            text:
+                'Amity Social Cloud supercharges platforms with social features — from Feeds and Chat to Stories and Live Streaming. Building online communities, drive social engagement, create positive experiences, and grow revenues.',
+            projects: [
+                'Maintaining Amity Typescript SDK',
+                'Init and maintain React Native Sample App',
+            ],
+        },
+        {
+            id: 5,
             from: '01/2015',
+            to: '06/2021',
             location: 'Tehran - Iran',
             title: 'Senior front-end developer',
             company: 'Upera',
@@ -46,7 +60,7 @@ const experienceData: ExperienceBlockProps = {
             ],
         },
         {
-            id: 2,
+            id: 4,
             from: '04/2020',
             to: '03/2021',
             location: 'Amsterdam, Netherlands',
@@ -72,7 +86,7 @@ const experienceData: ExperienceBlockProps = {
                 'As I started my career I was and still am more interested in individual and short-term projects. My main goal is to offer help and consultation to small and medium-sized businesses to start and maintain their digital presence.',
         },
         {
-            id: 4,
+            id: 2,
             from: '08/2012',
             to: '02/2013',
             location: 'Tehran, Iran',
@@ -82,7 +96,7 @@ const experienceData: ExperienceBlockProps = {
                 'Varzesh3 is the top Iranian sports news agency. At the time I had the responsibility to design and manage the "national online games tournament" platform, so that users can register and take part in the tournament.',
         },
         {
-            id: 5,
+            id: 1,
             from: '08/2013',
             to: '02/2014',
             location: 'Erbil, Iraq',
@@ -135,7 +149,7 @@ const skillsData: SkillBlockProps = {
         },
         {
             id: 'team',
-            title: 'Team Management',
+            title: 'Scrum/Team Work',
             // level: 'Mid-Senior',
         },
     ],
