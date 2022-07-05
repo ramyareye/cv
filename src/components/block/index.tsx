@@ -14,7 +14,7 @@ import { BlockTypesProps, AllBlockProps } from 'types/components';
 const Block: VFC<AllBlockProps> = (props) => {
     return (
         <div className="mb-8">
-            <HeadLine type={props.type} className="mb-4" />
+            <HeadLine type={props.type} className="mb-8" />
 
             {props.type === BlockTypesProps.SKILLS && <Skills values={props.value} />}
             {props.type === BlockTypesProps.HOBBIES && <Hobbies values={props.value} />}

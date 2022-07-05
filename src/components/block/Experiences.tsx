@@ -6,7 +6,7 @@ const Experience: FC<{ values: ExperienceBlockValueProps[] }> = ({ values }) => 
     return (
         <>
             {values.map(({ id, from, to, location, title, company, text, projects }) => (
-                <div className=" flex transform scale-90" key={id}>
+                <div className=" flex transform scale-90 mb-7" key={id}>
                     <div className="w-1/4">
                         <p className="leading-normal text-md text-gray-650">
                             {from} - {to ? to : 'present'}

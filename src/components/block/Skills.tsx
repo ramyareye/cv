@@ -3,7 +3,6 @@ import { FC } from 'react';
 import { SkillBlockValueProps } from 'types/components';
 
 const Skills: FC<{ values: SkillBlockValueProps[] }> = ({ values }) => {
-    console.log(values);
     return (
         <div className="flex flex-wrap">
             {values.map(({ id, title, level }) => (

@@ -1,4 +1,4 @@
-import avatar from 'assets/avatar.jpeg';
+import avatar from 'assets/reza.jpg';
 
 import {
     HeaderProps,
@@ -39,8 +39,11 @@ const experienceData: ExperienceBlockProps = {
             text:
                 'Amity Social Cloud supercharges platforms with social features — from Feeds and Chat to Stories and Live Streaming. Building online communities, drive social engagement, create positive experiences, and grow revenues.',
             projects: [
-                'Maintaining Amity Typescript SDK',
-                'Init and maintain React Native Sample App',
+                'In charge of Amity Typescript SDK',
+                'Code, discuss and review teamates PRs',
+                'Doing different POCs for Typescript SDK',
+                'Working on fundamental features like Caching, Reactivity and Realtime Events',
+                'Create and maintain Amity Social Cloud React Native Sample App',
             ],
         },
         {
@@ -238,12 +241,14 @@ const openSourceData: OpenSourceBlockProps = {
         {
             id: 'iran-react-community-lecture',
             title: 'Lecturer on Iran React Community meet-up',
-            // link: 'Mid-Senior',
+        },
+        {
+            id: 'react-native-eject',
+            title: 'react-native-eject !',
         },
         {
             id: 'extension',
             title: 'Doing an extension starter on top of React',
-            // link: 'Mid-Senior',
         },
         {
             id: 'swr',
@@ -253,7 +258,6 @@ const openSourceData: OpenSourceBlockProps = {
         {
             id: 'nextjs-wp',
             title: 'Nextjs Commerce for WP',
-            // link: 'Mid-Senior',
         },
     ],
 };
