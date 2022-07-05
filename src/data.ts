@@ -264,7 +264,6 @@ const openSourceData: OpenSourceBlockProps = {
 
 const EducationData: EducationBlockProps = {
     type: BlockTypesProps.EDUCATION,
-    // options: {},
     value: [
         {
             id: 'Mohajer',
