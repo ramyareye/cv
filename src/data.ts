@@ -43,6 +43,7 @@ const experienceData: ExperienceBlockProps = {
                 'Code, discuss and review teamates PRs',
                 'Doing different POCs for Typescript SDK',
                 'Working on fundamental features like Caching, Reactivity and Realtime Events',
+                'Doing interviews and helping new team members onboarding',
                 'Create and maintain Amity Social Cloud React Native Sample App',
             ],
         },
